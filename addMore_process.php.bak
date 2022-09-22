@@ -1,0 +1,55 @@
+<?php 
+
+
+include('connection.php');
+	
+	print_r($_POST) 'PGP';
+	/*function insertParent($conn){
+		
+		$memType = $_POST['memType'];
+		$fname = $_POST['fname'];
+		$lname = $_POST['lname'];
+		$datepicker = $_POST['datepicker'];
+		
+		//$results = mysqli_query($conn,$sql);		
+		//echo json_encode ($results);	
+		
+		$img = $_FILES['pic']['name'];
+		$tmp = $_FILES['pic']['tmp_name'];
+			
+		$valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'bmp' , 'pdf' , 'doc' , 'ppt'); // valid extensions
+		$path = 'uploads/'.$img; // upload directory
+
+
+		if($_FILES['pic'])
+		{
+			
+			// get uploaded file's extension
+			$ext = strtolower(pathinfo($img, PATHINFO_EXTENSION));
+
+			if(in_array($ext, $valid_extensions)) 
+			{ 
+
+					if(move_uploaded_file($tmp,$path)) 
+					{
+						//echo "<img src='$path' />";
+						$sql = "INSERT INTO member (fname, lname, dob, image, memType, active)
+						VALUES ('".$fname."','".$lname."', '".$datepicker."', '".$path."', '".$memType."', 0)";	
+					
+					$results = mysqli_query($conn,$sql);
+					echo json_encode ($results);	
+					
+					}
+			}
+		}
+		echo json_encode ($path);	
+	
+	}
+	
+	
+	insertParent($conn);
+	
+	
+	*/
+	
+?>
